@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="media/svg/index-svgrepo-com.svg">
+    <title>Articles</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Articles page of Fulan, a Frontend Developer.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Fulan">
+
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Single-Page CV Version 2.0">
+    <meta property="og:description" content="Single-Page CV of Fulan, a Frontend Developer.">
+    <meta property="og:image" content="media/img/10400_10-2.jpg">
+    <meta property="og:url" content="https://fulan.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <style>
+        img { 
+            height: 24px; 
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="media/svg/index-svgrepo-com.svg" alt="Logo">
+                <span>Fulan</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+        <h1>My Articles</h1>
+        <p>Here are some of the articles I've written:</p>
+    </header>
+    <main>
+        <section id="search">
+            <form action="#" method="GET">
+                <label for="searchInput">Search Articles:</label>
+                <input type="search" id="searchInput" name="q" placeholder="Search articles...">
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+        </section>
+
+        <section id="articles-list">
+            
+            <article>
+                <header>
+                    <h2>Introduction to HTML</h2>
+                    <p>Category: <strong>HTML</strong></p> </header>
+                <p>A beginner's guide to learning HTML.</p>
+                <a href="article-detail.html">Read More</a> </article>
+
+            <article>
+                <header>
+                    <h2>CSS Basics</h2>
+                    <p>Category: <strong>CSS</strong></p>
+                </header>
+                <p>Understanding the fundamentals of CSS.</p>
+                <a href="article-detail.html">Read More</a>
+            </article>
+
+            <article>
+                <header>
+                    <h2>JavaScript for Beginners</h2>
+                    <p>Category: <strong>JavaScript</strong></p>
+                </header>
+                <p>An introduction to JavaScript programming.</p>
+                <a href="article-detail.html">Read More</a>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fulan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

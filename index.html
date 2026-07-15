@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Web Development dengan HTML Semantik</title>
+    <style>
+        /* CSS Sederhana agar layout terlihat jelas di browser */
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header, nav, main, aside, footer { padding: 20px; margin: 10px; border-radius: 5px; }
+        header { background: #2c3e50; color: white; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { display: flex; flex-wrap: wrap; padding: 0; margin: 0; }
+        article { flex: 3; background: white; padding: 20px; margin: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        aside { flex: 1; background: #dbdbdb; padding: 20px; margin: 10px; min-width: 200px; }
+        footer { background: #34495e; color: white; text-align: center; clear: both; }
+        blockquote { background: #f9f9f9; border-left: 5px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rumah Belajar Coding</h1>
+        <p>Tutorial Web Development Terlengkap dan Mudah Dipahami</p>
+        
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#artikel">Artikel</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <article id="artikel">
+            <header style="background: transparent; color: #333; padding: 0; margin: 0 0 15px 0;">
+                <h2>Panduan Lengkap HTML5 Semantik</h2>
+                <p>Dipublikasikan oleh: <strong>Admin</strong> pada <time datetime="2026-07-14">14 Juli 2026</time></p>
+            </header>
+
+            <section id="pendahuluan">
+                <h3>Pendahuluan</h3>
+                <p>Saat ini, menulis kode web bukan sekadar membuat tampilan yang bagus. Kita harus menggunakan <abbr title="HyperText Markup Language">HTML</abbr> semantik agar website kita lebih mudah dikenali oleh mesin pencari seperti Google.</p>
+                <p>Seorang ahli web pernah berkata, <q>Gunakan tag yang tepat untuk pekerjaan yang tepat.</q></p>
+            </section>
+
+            <section id="pembahasan">
+                <h3>Mengapa Menggunakan Tag Semantik?</h3>
+                <p>Sebelum HTML5, kita sering terjebak dalam <em>"div soup"</em> (terlalu banyak menggunakan tag div). Sekarang, aturan tersebut sudah diperbarui.</p>
+                
+                <p>Cara lama membuat struktur layout adalah dengan <del>dan menggunakan tag &lt;div id="header"&gt;</del>, namun sekarang kita <ins>wajib menggunakan tag &lt;header&gt;</ins> secara langsung.</p>
+                
+                <p>Mari kita definisikan satu istilah: <dfn>Semantic Markup</dfn> adalah metode penulisan kode HTML di mana tag yang digunakan merepresentasikan arti dari konten tersebut.</p>
+
+                <blockquote cite="https://www.w3.org/TR/html5/">
+                    "Elemen semantik secara jelas mendeskripsikan maknanya baik kepada browser maupun kepada developer."
+                </blockquote>
+                <p>Kutipan di atas diambil langsung dari dokumentasi resmi <cite>W3C HTML5 Specification</cite>.</p>
+            </section>
+
+            <footer style="background: transparent; color: #777; border-top: 1px solid #eee; padding-top: 10px; margin-top: 20px;">
+                <p>Kategori: <em>Web Design</em> | Tag: <em>HTML, Coding, Frontend</em></p>
+            </footer>
+        </article>
+
+        <aside id="sidebar">
+            <h3>Artikel Terpopuler</h3>
+            <ul>
+                <li><a href="#">Belajar CSS Grid dalam 10 Menit</a></li>
+                <li><a href="#">Panduan Flexbox untuk Pemula</a></li>
+                <li><a href="#">Harga Kelas Premium: <s>Rp 500.000</s> Rp 199.000</a></li> </ul>
+            <hr>
+            <h3>Info Penulis</h3>
+            <p>Kami adalah komunitas developer yang fokus membagikan ilmu pemrograman web secara gratis.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <address>
+            Hubungi kami di: <a href="mailto:info@belajarcoding.com" style="color: #ecf0f1;">info@belajarcoding.com</a><br>
+            Menara Coding Lt. 5, Jakarta, Indonesia.
+        </address>
+        <p style="margin-top: 15px; font-size: 0.9em;">&copy; 2026 Rumah Belajar Coding. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
